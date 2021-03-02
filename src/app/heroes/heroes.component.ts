@@ -36,4 +36,12 @@ export class HeroesComponent implements OnInit {
         this.heroes.push(hero);
       });
   }
+
+  // Delete a hero
+  delete(hero: Hero): void {
+    // Delete hero from list of screen, expecting server delete request to succeed
+    this.heroes = this.heroes.filter(h => h !== hero);
+    // delete request to server
+    this.heroService.deleteHero(hero).subscribe();
+  }
 }
