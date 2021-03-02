@@ -1,8 +1,22 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-        {{hero.name}}
-    </a>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+            <app-hero-search></app-hero-search> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <h2>Top Heroes</h2>
+            <div class="heroes-menu">
+                <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+                    {{hero.name}}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <app-messages></app-messages>
+        </div>
+    </div>
 </div>
-
-<app-hero-search></app-hero-search>

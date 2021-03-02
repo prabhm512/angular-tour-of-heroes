@@ -5,6 +5,16 @@ h2 {
     font-weight: lighter;
 }
 
+.messageList {
+    max-height: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.row {
+    margin-top: 20px;
+}
+
 .clear {
     color: #333;
     background-color: #eee;

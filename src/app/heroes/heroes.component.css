@@ -1,11 +1,28 @@
 /* HeroesComponent's private CSS styles */
+
+label#new-hero {
+    margin-right: 5px;
+}
+
+.add-button {
+    margin-left: 5px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
 .heroes {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: 15em;
+    width: 17em;
+    height: 23em;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .heroes li {
+    max-width: 30em;
     position: relative;
     cursor: pointer;
 }
@@ -19,8 +36,8 @@
     text-decoration: none;
     background-color: #EEE;
     margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
+    /* padding: .3em 0; */
+    height: 2em;
     border-radius: 4px;
     display: block;
     width: 100%;
@@ -45,8 +62,7 @@
     line-height: 1em;
     position: relative;
     left: -1px;
-    top: -4px;
-    height: 1.8em;
+    height: 2.4em;
     min-width: 16px;
     text-align: right;
     margin-right: .8em;
@@ -66,8 +82,8 @@
 
 button.delete {
     position: absolute;
-    left: 210px;
-    top: 5px;
+    left: 216px;
+    top: 0.1px;
     background-color: white;
     color:  #525252;
     font-size: 1.1rem;
@@ -77,4 +93,14 @@ button.delete {
 button.delete:hover {
     background-color: #525252;
     color: white;
+}
+
+@media screen and (max-width: 468px) {
+    input {
+        width: 100px;
+    }
+    .add-button {
+        padding: 0.3rem;
+        font-size: 0.7rem;
+    }
 }

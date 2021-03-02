@@ -1,7 +1,13 @@
-<h1>{{title}}</h1>
-<nav>
-    <a routerLink="/dashboard" class="dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
+<!-- <h1>{{title}}</h1> -->
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <!-- Navbar content -->
+        <i><a class="navbar-brand h1" routerLink="/dashboard">{{title}}</a></i>
+        <div class="links">
+            <a routerLink="/heroes" class="heroes nav-item">Heroes</a>
+            <a routerLink="/dashboard" class="dashboard nav-item">Dashboard</a>
+        </div>
+    </div>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
+<!-- <app-messages></app-messages> -->
